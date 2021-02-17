@@ -19,11 +19,15 @@ public class Conexion {
         Connection connection = null;
         try{
             //Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/libreria","root","toor");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app","root","toor");
+            /*
             if (connection != null) {
                 System.out.println("conexion exitosa");
                 
             }
+            
+            */
+            
             
         }catch(SQLException e){
             System.out.println(e);
